@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input-label {
+        @apply block uppercase text-sm font-bold tracking-[.2rem] text-smokeGrey mb-2;
+    }
+
+    .input {
+        @apply border border-lightGrey w-[105px] md:w-[150px] rounded-md
+        text-[24px] md:text-[32px] font-bold placeholder:font-bold px-4 py-1  appearance-none focus:outline-purple cursor-pointer;
+    }
+
+    .error {
+      @apply text-lightRed italic block mt-1;
+    }
+}
+
+@layer utilities {
+    .appearance-none::-webkit-inner-spin-button,
+  .appearance-none::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+}

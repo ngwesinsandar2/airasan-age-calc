@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="max-h-screen px-1 bg-offWhite font-poppins">
+  <div class="box bg-white w-full md:w-[600px] p-6 md:p-10 mx-auto mt-[100px] md:mt-[30px] rounded-xl rounded-br-[150px]">
+    <div class="input-fields flex justify-between">
+      <div class="input-field">
+        <label for="day" class="input-label">Day</label>
+        <input type="number" required placeholder="DD" id="day" class="input">
+        <span for="error" class="text-sm error hidden">This field is required</span>
+      </div>
+      <div class="input-field">
+        <label for="month" class="input-label">Month</label>
+        <input type="number" required placeholder="MM" id="month" class="input">
+        <label for="error" class="text-sm error hidden">This field is required</label>
+
+      </div>
+      <div class="input-field">
+        <label for="year" class="input-label">Year</label>
+        <input type="number" required placeholder="YYYY" id="year" class="input">
+        <label for="error" class="text-sm error hidden">This field is required</label>
+
+      </div>
+    </div>
+    <div class="flex justify-center items-center my-[50px] md:mt-14 relative">
+      <span class="w-full w-full border-t-2 border-lightGrey"></span>
+      <img src="/assets/images/icon-arrow.svg" class=" bg-purple absolute rounded-full p-3 md:p-4 cursor-pointer button duration-150 hover:bg-offBlack">
+    </div>
+    <div class="result">
+      <h1 class="text-[50px] md:text-[55px] font-bold italic"><span class="text-purple display-year">--</span> years</h1>
+      <h1 class="text-[50px] md:text-[55px] font-bold italic"><span class="text-purple display-month">--</span> months</h1>
+      <h1 class="text-[50px] md:text-[55px] font-bold italic"><span class="text-purple display-day">--</span> days</h1>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
